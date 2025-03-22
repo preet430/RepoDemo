@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>authentication page</title>
+<script type="text/javascript">
+		function check()
+        {
+		   var a=document.a1.a2.value;
+		    var p=document.a1.a3.value;
+			if(a=="" && p=="")
+			 {
+              alert("please fill all the fields");
+			  return false;
+			 }
+			 if(a=="patel" && p==3456)
+			 {
+                return true;
+			 }
+            else
+                {
+                    alert("you are not authorised user");
+                    return false;
+                }
+			
+		}
+	</script>
+
+</head>
+<body>
+<form name="a1" onsubmit="return check()" method="post" action="instruction.jsp">
+		<table border="2">
+			<tr align="center"><td colspan="2">login</td>
+			<tr><td>user name:</td>
+			    <td><input type="text" name="a2"></td> 
+			</tr>  
+			<tr><td>password:</td>
+			    <td><input type="password" name="a3"> </td>
+			</tr>
+			<tr align="center"><td colspan="2"><input type="submit" value="submit"></td></tr>          	
+		</table>
+
+
+	</form>
+
+
+</body>
+</html>
