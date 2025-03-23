@@ -12,6 +12,7 @@ public class validate extends HttpServlet {
         
         String username = request.getParameter("a2");
         String password = request.getParameter("a3");
+        String password = request.getParameter("a3");
         
         if((username.equals("preet")) && (password.equals("1234")))
         {
