@@ -21,6 +21,8 @@ public class validate extends HttpServlet {
         else
         {
            out.println("Username or Password incorrect");
+	   out.println("Testing");
+           out.println("Testing");
            RequestDispatcher rs = request.getRequestDispatcher("login.html");
            rs.include(request, response);
         }
