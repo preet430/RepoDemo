@@ -16,7 +16,7 @@ public class Validation extends HttpServlet {
 		    String username = request.getParameter("a2");
 	        String password = request.getParameter("a3");
 	        
-	        if(username.equals("preet") && password.equals("1234"))
+	        if(username.equals("preet12") && password.equals("1234"))
 	        {
 	        	response.sendRedirect("instruction.jsp");
 	        }
